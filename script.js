@@ -15,8 +15,8 @@ function getHumanChoice() {
 }
 
 function playRound(humanChoice, computerChoice) {
-    let human = humanChoice;
-    let computer = computerChoice;
+    let human = humanChoice.trim();
+    let computer = computerChoice.trim();
     if (
         (human === "rock" && computer === "paper") ||
         (human === "paper" && computer === "scissors") ||
