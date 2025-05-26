@@ -24,11 +24,14 @@ function playRound(humanChoice, computerChoice) {
     ) {
         alert(`You lose! ${computer} beats ${human}`);
         computerScore++;
+        totalGames++;
+    } else if (human === computer) {
+        alert(`It's a tie!`)
     } else {
         alert(`You won! ${human} beats ${computer}`);
         humanScore++;
+        totalGames++;
     }
-    totalGames++;
     playGame();
 }
 
